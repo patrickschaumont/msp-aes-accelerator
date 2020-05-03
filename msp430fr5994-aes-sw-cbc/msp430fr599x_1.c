@@ -74,7 +74,7 @@ int main(void) {
     Cycles[2] = TimerLap();
 
     uint16_t k;
-    for (k=0; k<4; k++) {
+    for (k=0; k<8; k++) {
         TimerLap();
 
         for (i=0; i<8; i++)
@@ -113,7 +113,7 @@ int main(void) {
 
     AESASTAT |= AESKEYWR;
 
-    for (k=0; k<4; k++) {
+    for (k=0; k<8; k++) {
 
         TimerLap();
 

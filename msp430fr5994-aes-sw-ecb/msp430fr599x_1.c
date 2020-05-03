@@ -82,7 +82,7 @@ int main(void) {
         for (i=0; i<8; i++)
             ((uint16_t *) DataAESencrypted)[i] = AESADOUT;
 
-        Cycles[2] = TimerLap();
+        Cycles[2 + (k & 3)] = TimerLap();
     }
 
     // -------------------- Decryption
